@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'cwh-todo-list';
+  variable = 1;
+  constructor(){
+    setInterval(() => {
+      this.variable = this.variable+1
+    }, 1000);
+  }
 }
